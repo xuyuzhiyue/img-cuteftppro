@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				font-size:0;   
+				
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				
+				
+			}
+			
+			.box{
+				/*width: 200px;*/
+			    /*height: 200px;*/
+				background-color: red;
+				/*display: none;        /*消失/隐藏然后腾出位置*/
+				display: inline-block;
+				/*display: inline;*/
+			}
+			
+			.box2{
+				
+				background-color: blanchedalmond;
+				display: inline-block;
+				/*display: inline;*/
+			}
+			
+			input{
+				width: 100px;
+				height: 50px;
+				display: block;
+				outline: none;   /*去掉轮廓*/
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">你好</div>
+		<div class="box2">你好</div>
+		
+		<input type="text" />
+		<input type="text" />
+		
+	</body>
+</html>
+
+<!--
+	作者：offline
+	时间：2019-09-07
+	描述：
+	块元素                   独占一行              宽高有效           display:block;   h1-h6   div   p    ul li
+	行内元素              一行里面              宽高无效           display:inline;  span   b  i  u  s  a
+	行内块元素        一行里面               宽高有效            display:inline-block;     img    input  textarea
+	
+	
+	
+-->

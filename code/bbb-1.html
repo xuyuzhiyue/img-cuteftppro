@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			#bbb{
+				
+				color: red;
+			}
+			h1{
+				
+				color: blue;
+			}
+			h1{
+				
+				color: hotpink;
+			}
+			h2{
+				
+				color: darkolivegreen
+			}
+			*{
+				size: 30px;
+				color: orange;
+			}
+			.bbbb{
+				color: darkmagenta;
+			}
+			#bbbb{
+				color: chartreuse;
+			}
+			#bbbbb{
+				color: bisque;
+			}
+			h4{
+				
+				color: black!important;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="bbb">你好</h1>
+		<h2>hello2</h2>
+		<h3 class="bbbb" id="bbbb">hello3</h3>
+		
+		<h4 id="bbbbb" style="color: saddlebrown;">hello4</h4>
+		
+	</body>
+</html>
+<!--
+	作者：offline
+	时间：2019-09-06
+	描述：
+	如果某个样式被前面的选择器定义了，后面友写了怎么办？？？
+	      优先级相同情况下，后者会把前者覆盖
+	  通配选择器         0    
+	 标签选择器          标签名            1
+	 class选择器    .class值        10
+	 id选择器            #id值                 100
+	 内联样式              style属性值   1000
+    !important   描述某个具体的css样式属性值后面    无穷大
+-->

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0 ;
+				margin: 0;
+				text-align: center;
+				color: #fff;
+				font-size: 30px;
+			}
+			.box{
+				width: 1200px;
+				margin: 0 auto;
+				border: 2px solid black;
+				height: 800px;
+			}
+			
+			.big{
+				
+				overflow: hidden;
+			}
+			.left{
+				width: 200px;
+				height: 400px;
+				background-color: red;
+				float: left;
+				
+			}
+			
+			.content{
+				height: 500px;
+				background-color: blue;
+				text-align: left;
+				line-height: 30px;
+				float: left;
+				width: 800px;
+			}
+			
+			.right{
+				background-color: orange;
+				width: 200px;
+				height: 400px;
+				float: right;
+			}
+			
+			.footer{
+				width: 800px;
+				height: 100px;
+				margin: 50px auto;
+				background-color: black;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="big">
+				<div class="left">我是左边</div>
+				<div class="content">
+					    我是中间的部分<br /><br /><br />
+					  我是中间的部分<br /><br /><br />
+					  我是中间的部分<br /><br /><br />
+					  我是中间的部分<br /><br /><br />
+					  我是中间的部分<br /><br /><br />
+				</div>  
+				<div class="right">我是右边</div>
+			</div>
+			<div class="footer">我是页脚</div>
+		</div>
+	</body>
+</html>
+
+<!--
+	浮动解决方案“
+	      三个元素都浮动，控制好宽度，不要重叠，父元素加上overflow：hidden
+	
+	
+	
+	
+	
+-->

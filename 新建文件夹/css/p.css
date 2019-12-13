@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+/*图片轮播区域样式设置 */
+#ppt-container{
+	width:500px;
+	height:270px;
+	margin:0 auto;
+	padding:0px;
+	position:relative;
+}
+
+/*列表元素样式设置*/
+ul{
+	list-style:none;
+	position:relative
+}
+
+/*列表选项元素样式设置*/
+li{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	float: left;
+	text-align: center;
+}
+
+/*隐藏效果设置*/
+.hide{
+	display:none;
+}
+
+/* 图片样式设置*/
+.ppt-container img{
+	width:100%;
+	height:100%;
+}
+
+/* 段落元素样式设置 */
+p{
+	position:absolute;
+	top:75%;
+	left:0%;
+	width:100%;
+	background-color: rgb(255,255,255,0.8);
+	padding:10px;
+	font-family:"微软雅黑 Light";
+}
+
+/*按钮总体样式设置*/
+button{
+	position:absolute;
+	margin:10px;
+	border:none;
+	outline:none;
+	background-color:transparent;
+	width:50px;
+	height:30px;
+}
+
+/*分别为按钮设置位置*/
+#btn1{
+	top:65%;
+	left:0%;
+}
+
+#btn2{
+	top:65%;
+	left:85%;
+}
+
+	

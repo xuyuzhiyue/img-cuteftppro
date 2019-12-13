@@ -1,0 +1,74 @@
+<!--此次网站的开发，纯粹是为了分享热爱
+开发团队：逆风工作室
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/p.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<!--图片轮播的区域 -->
+<div id="ppt-container">
+   <ul>
+     <li>
+     <img src="../images/1.jpg" />
+     <p>古寨村</p>
+     </li>
+     <li class="hide">
+     <img src="../images/2.jpg" />
+     <p>雪白山</p>
+     </li>
+     <li class="hide"><img src="../images/3.jpg" />
+     <p>夕阳美</p>
+     </li>
+  </ul>
+  <!--插入按钮，用于切换上下图片-->
+  <button id="btn1" onClick="last()">
+    <img src="../images/left.jpg" width="100%" height="100%" />
+   </button>
+   <button id="btn2" onClick="next()">
+    <img src="../images/right.jpg" width="100%" height="100%" />
+   </button>
+</div>
+<script>
+    //当前图片序号
+	var index = 0;
+	$(document).ready(function(){
+		setInterval("next()",8000);
+	});
+	
+	//切换下一张图片
+	function next(){
+		$("li:eq("+index+")").fadeOut(1500);
+		//判断当前图片是否为最后一张
+		if(index == 2)
+		{
+			index = 0;
+		}
+		else
+		{
+			index++;
+		}
+		$("li:eq("+index+")").fadeIn(1500);
+	}
+	
+	//切换上一张图片
+	function last(){
+		$("li:eq("+index+")").fadeOut(1500);
+		if(index==0)
+		{
+			index=2;
+		}
+		else
+		{
+			index--;
+		}
+		$("li:eq("+index+")").fadeIn(1500);
+	}
+</script>
+</body>
+</html>
+
+
+

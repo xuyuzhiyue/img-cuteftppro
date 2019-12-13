@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="..\css\style2.css">
+<!--<script src="..\js\1.js"></script> -->
+</head>
+<body>
+	<div id="container">
+    <ul id="uList" style="left:0px">
+    	<li><a href="#"><img src="..\images\i1.jpg"></a></li>
+        <li><a href="#"><img src="..\images\i2.jpg"></a></li>
+        <li><a href="#"><img src="..\images\i3.jpg"></a></li>
+        <li><a href="#"><img src="..\images\i4.jpg"></a></li>
+        <li><a href="#"><img src="..\images\i5.jpg"></a></li>
+    </ul>
+    <div id="pre" class="arrow"></div>
+    <div id="next" class="arrow"></div>
+    <div id="btn">
+    	<ul>
+        	<li class="on" index="1" ></li>
+            <li index="2" ></li>
+            <li index="3" ></li>
+            <li index="4" ></li>
+            <li index="5" ></li>
+        </ul>
+    </div>
+  </div>
+<script>
+// JavaScript Document
+window.onload = function(){
+	var container = document.getElementById("container");
+	var uList = document.getElementById("uList");
+	var btn = document.getElementById("btn").getElementsByTagName("li");
+	var pre = document.getElementById("pre");
+	var next = document.getElementById("next");
+	var index = 1;
+	//定义函数
+	function show(){
+		for(var i = 0; i < btn.length; i++)
+		{
+			if(btn[i].className == "on")
+			{
+				btn[i].className = "";
+			}
+			btn[index - 1].className = "on";
+		}
+	}
+	//定义函数
+	function animate(offset){
+		var nLeft = parseInt(uList.style.left) + offset + "px";
+		uList.style.left = nLeft;
+		if(parseInt(nLeft) > 0)
+		{
+			uList.style.left = -2400 + "px";
+		}
+		if(parseInt(nLeft) <= -3000)
+		{
+			uList.style.left = 0 + "px";
+		}
+	}
+	next.onclick = function(){
+		if(index == 5)
+		{
+			index = 1;
+		}
+		else
+		{
+			index += 1;
+		}
+		show();
+		animate(-600);
+	}
+	
+	pre.onclick = function(){
+		if(index == 1)
+		{
+			index = 5;
+		}
+		else
+		{
+			index -= 1;
+		}
+		show();
+		animate(600);
+	}
+	
+	for(var i = 0; i < btn.length; i++)
+	{
+		btn[i].onclick = function(){
+			if(this.className == "on"){
+				return;
+			}
+			var myIndex = parseInt(this.getAttribute("index"));
+			var offset = -600 * (myIndex - index);
+			animate(offset);
+			index = myIndex;
+			show();
+		}
+	}
+}
+</script>
+</body>
+</html>

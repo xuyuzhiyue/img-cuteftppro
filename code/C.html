@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				height: 3000px;
+			}
+			
+			.aa{
+				
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				position: fixed;
+				right: 20px;
+				bottom: 20px;
+				z-index: 1;
+			}
+			
+			.bb{
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+				position: fixed;
+				right: 50px;
+				bottom: 50px;
+				z-index: 0;
+			}
+			
+			.box{
+				
+				width: 200px;
+				height: 200px;
+				background-color: orange;
+				position: relative;
+				margin: 0 auto;
+			}
+			
+			
+			
+			.box .cc{
+				width: 50px;
+				height: 50px;
+				margin: 0 auto;
+				background-color: blue;
+				position: relative;
+				top: 20px;
+				left: 40px;
+			}
+			
+			/*h3{
+				border: 1px solid blue;
+			}*/
+			
+			/*.dd{
+				width: 300px;
+				height: 300px;
+				border: 1px solid orange;
+				
+			}
+			*/
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="aa"></div>
+		<div class="bb"></div>
+		
+		<div class="box">
+			<div class="cc"></dic>
+		</div>
+		<!--<h3>我是h3</h3>-->
+		
+		<!--<div class="dd">
+			<div class="rr">
+				<div class="vv"></div>
+				
+			</div>-->
+			
+		</div>
+	</body>
+</html>
+
+<!--
+	作者：offline
+	时间：2019-09-08
+	描述：
+	
+	
+	定位：
+	    三个定位                      两个判断                  一个层级 
+	    
+	    
+	 三个定位；         position                    left/right    yop/bottom     z-index
+	       固定定位      fixed
+	      相对定位       relative
+	   绝对定位          absolute
+	   
+	两个判断：
+	   该元素定位后在网页中是否还有位置
+	   该元素定位相对于谁进行偏移
+
+         固定定位 fixed               没有位置                       参考body          
+    相对定位relative               依旧有位置                  参考原来的位置
+  绝对定位absolute                没有位置（脱离了文档流）      参考父类层级，由内向外底提个含有定位的元素  如果一值都没有找到，就参考body
+
+           一个层级；
+                层级高低问题
+	  
+	
+	
+-->

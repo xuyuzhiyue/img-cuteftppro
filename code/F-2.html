@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box1111{
+				width: 720px;
+				height: 450px;
+				background-image: url(img/img2/a5.jpg);
+				position: relative;
+			}
+			
+			.box{
+				border: 1px solid ghostwhite;
+				width: 280px;
+				height: 180px;
+				margin: 0 auto;
+				color: #FFFFFF;
+				text-align: center;
+				position: absolute;
+                top: 100px;
+                right: 220px;
+			}
+			
+			.box input{
+				background-color: transparent;  /*透明*/
+				border:none;      /**边框线不要/
+				outline: none;   /*框线不要*/
+				padding: 1px;
+ 				color: #FFFFFF;
+ 				font-size: 12px;
+			}
+			
+			.box p{
+				line-height: 30px;
+			}
+			
+			.box img{
+				width: 40px;
+				height: 40px;
+				margin-bottom: 10px;
+			}
+			
+			.box2{
+				margin-top: 2px;
+				text-align: right;
+			}
+			
+			.box2 a{
+				color: #FFFFFF;
+				text-decoration: none;
+				font-size: 12px;
+			}
+			
+			.box22 input{
+				width: 28px;
+				height: 18px;
+				background-color: rgba(171,210,124,0.2);
+				border: none;
+				cursor: pointer;    /*手样式*/
+				box-shadow: 1px 1px 1px 1px #00FFFF ;
+				
+				
+			}
+			
+			.box22 input:hover{
+				color: red;
+				
+			}
+			
+			
+			.logo a{
+				height: 60px;
+				opacity: 0.8;
+			
+				font-size: 30px;
+			}
+			.logo{
+				position: absolute;
+				right: 30px;
+				top: 40px;
+				border: 1px solid bisque;
+				border-radius: 10px;
+				/*border: none;*/
+			}
+			
+			.logo a:hover{
+				color: fuchsia;
+			}
+			
+			.logo a:active{
+				color: skyblue;
+				
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="box1111">
+					<div class="logo">
+					<!--<a href=""><img src="img/img2/a8.jpg"/></a>-->
+					<a href="http://www.taobao.com" target="_blank">Logo</a>
+				</div>
+				
+				<div class="box">
+					<img src="img/img2/a6.jpg" alt="" />
+					<form action="">
+						<p>姓名：<input type="text" /></p>	
+						<p>密码：<input type="password" /></p>
+						<p class="box2"><a href="">忘记密码?</a></p>
+						<div class="box22">
+							<input type="submit" class="submit" value="登陆"/>
+							<input type="reset" class="box333" value="清除" />
+						</div>
+					       
+					</form>
+				</div>
+			
+		</div>
+	</body>
+</html>

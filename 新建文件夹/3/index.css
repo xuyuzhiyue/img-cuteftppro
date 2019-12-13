@@ -1,0 +1,64 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*设置outo的样式*/
+#outer{
+	width: 620px;
+	height: 400px;
+	margin: 50px auto;
+	
+	position: relative;
+	overflow: hidden;
+}
+
+/*设置imglist*/
+#imgList{
+	list-style: none;
+	/*设置ul的宽度*/
+/*width: 3100px;*/
+
+/*开启绝对定位*/
+position: absolute;
+
+/*设置偏移量*/
+
+/*没向左移动620px,就会显示到下一张图片*/
+	left: 0px;
+}
+
+#imgList li{
+	float: left;
+	/*设置左右外边距*/
+	margin:0 10px;
+	
+}
+
+/*设置导航按钮*/
+#navDiv{
+	position: absolute;
+	/*设置位置*/
+bottom: 20px;
+
+/*设置lef值且居中*/
+	left: 247px;
+}
+
+#navDiv a{
+	/*设置超链接宽高，浮动*/
+float: left;
+width: 15px;
+height: 15px;
+background: red;
+margin:0 10px;
+/*设置半透明*/
+	opacity: 0.7;
+	border-radius: 50%;
+}
+
+/*设置鼠标移入的效果*/
+#navDiv a:hover{
+	background-color: yellow;
+}

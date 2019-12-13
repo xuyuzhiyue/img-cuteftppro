@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				border: 0;
+				padding: 0;
+			}
+			body{
+				background-color: #f4f4f4;
+			}
+			
+			.box{
+				width: 1190px;
+				margin: 100px auto;
+				background-color:#FFFFFF;
+				
+			}
+			
+			ul{
+				list-style: none;
+			}
+			.box .title{
+				padding: 0 20px;
+				border: 1px solid #F4F4F4;
+				height: 53px;
+				line-height: 53px;
+				font-size: 18px;
+				color: #ff9f00;
+				
+			}
+			.box .title i{
+				width: 4px;
+				height: 16px;
+				display:inline-block;
+				background-color: #ff9f00;
+				/*vertical-align: middle;行内居中对齐*/
+			}
+			
+			.box .list{
+				overflow: hidden;
+				border-bottom: 1px solid #FF4400;
+			    
+			}
+			
+			.box .list li{
+				padding: 20px 19px;
+				width: 199px;
+				border-right: 1px solid #F4F4F4;
+				border-bottom:  1px solid #F4F4F4;
+				float: left;
+				position: relative;
+				
+				}
+			.list .pic img{
+				width:100% ; 
+			}
+			
+			.box .list li .name{
+				line-height: 24px;
+				font-size: #666;
+			}
+			
+			 a{
+				color: inherit;   /*继承他的颜色*/
+				text-decoration: none;		
+				/*color: black;*/	
+			}
+				
+			.box .list .fix{
+				/*display: none;*/
+				height: 82px;
+				width: 100%;
+				background-color: #ff5000;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				text-align: center;
+				display: none;
+			}
+			
+			.box .list .bot{
+				overflow: hidden;
+				margin-top: 20px;
+				/*line-height: 20px;*/
+			}
+			
+			.box .list .bot .price{
+				float: left;
+				font-size: 12px;
+				color: #ff4400;
+			}
+			
+			.box.bot .price i{
+				font-style: normal;
+				font-size: 20px;
+			}
+			
+			
+			.box .list .bot .mun{
+				float: right;
+				font-size: 12px;
+				color: #9ca0aa;
+			}
+			
+			.box .list .fix h3{
+				font-weight: normal;
+				text-align: center;
+				width: 120px;
+				line-height: 40px;
+				color: #fff;
+				border-bottom: 1px solid #fe964a;
+				margin: 0 auto;
+				font-size: 18px;
+			  
+			}
+			
+			.box .list .fix p{
+				font-size: 16px;
+				color: #fff;
+			    margin: 4px auto ;
+
+			}
+			
+			.box .list li:hover{
+				width: 198px;
+				border: 1px solid #FF4400 ;
+			}
+			
+			.box .list li:hover .fix{
+				display: block;
+				
+			}
+			
+			.box .list .fix h3:hover{
+				color: greenyellow;
+			}
+			.box .list .fix p:hover{
+				color: #00FFFF;
+			}
+			
+			.box .title .text1{
+				border: 1px solid antiquewhite;
+				width: 300px;
+				height: 18px;
+				
+			}
+			
+			.box .title input{
+				width: 40px;
+				height: 20px;
+				font-size: 15px;
+				opacity: 0.3;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="title">
+				<i></i>
+				<span>猜你喜欢   <input type="text" class="text1"/><input type="button" name="submit1" id="submit" value="搜索" /></span>
+			</div>
+			<ul class="list">
+				<li>
+					<a href="" class="pic">
+						<img src="img/img2/9.jpg" alt="" />
+					</a>
+					<p class="name"><a href="">非物质文化大师亲自制作的羊毛衣服非物质文化遗产大师</a></p>
+					<div class="bot">
+						<span class="price"><i>&yen;</i>48</span>
+						<span class="mun">销量：16</span>
+					</div>
+					<a href="" class="fix">
+						<h3>找相似</h3>
+						<p>发现更多相似的宝贝</p>
+					</a>
+				</li>
+				
+				<li>
+					<a href="" class="pic">
+						<img src="img/img2/untitled2.png" alt="" />
+					</a>
+					<p class="name"><a href="">非物质文化大师亲自制作的羊毛衣服非物质文化遗产大师</a></p>
+					<div class="bot">
+						<span class="price"><i>💴</i>48</span>
+						<span class="mun">销量：16</span>
+					</div>
+					<a href="" class="fix">
+						<h3>找相似</h3>
+						<p>发现更多相似的宝贝</p>
+					</a>
+				</li>
+				
+				<li>
+					<a href="" class="pic">
+						<img src="img/img2/a.jpg" alt="" />
+					</a>
+					<p class="name"><a href="">非物质文化大师亲自制作的羊毛衣服非物质文化遗产大师</a></p>
+					<div class="bot">
+						<span class="price"><i>💴</i>48</span>
+						<span class="mun">销量：16</span>
+					</div>
+					<a href="" class="fix">
+						<h3>找相似</h3>
+						<p>发现更多相似的宝贝</p>
+					</a>
+				</li>
+				
+				<li>
+					<a href="" class="pic">
+						<img src="img/img2/untitled3.png" alt="" />
+					</a>
+					<p class="name"><a href="">非物质文化大师亲自制作的羊毛衣服非物质文化遗产大师</a></p>
+					<div class="bot">
+						<span class="price"><i>💴</i>48</span>
+						<span class="mun">销量：16</span>
+					</div>
+					<a href="" class="fix">
+						<h3>找相似</h3>
+						<p>发现更多相似的宝贝</p>
+					</a>
+				</li>
+				
+				<li>
+					<a href="" class="pic">
+						<img src="img/img2/a4.jpg" alt="" />
+					</a>
+					<p class="name"><a href="">非物质文化大师亲自制作的羊毛衣服非物质文化遗产大师</a></p>
+					<div class="bot">
+						<span class="price"><i>💴</i>48</span>
+						<span class="mun">销量：16</span>
+					</div>
+					<a href="" class="fix">
+						<h3>找相似</h3>
+						<p>发现更多相似的宝贝</p>
+					</a>
+				</li>
+				
+				<li>
+					<a href="" class="pic">
+						<img src="img/img2/9.jpg" alt="" />
+					</a>
+					<p><a href="">非物质文化大师亲自制作的羊毛衣服非物质文化遗产大师</a></p>
+					<div class="bot">
+						<span class="price"><i>💴</i>48</span>
+						<span class="mun">销量：16</span>
+					</div>
+					<a href="" class="fix">
+						<h3>找相似</h3>
+						<p>发现更多相似的宝贝</p>
+					</a>
+				</li>
+				
+				
+					
+			</ul>
+		</div>	
+			
+		</class>
+		
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0 ;
+				margin: 0;
+				text-align: center;
+				color: #fff;
+				font-size: 30px;
+			}
+			.box{
+				width: 1200px;
+				margin: 0 auto;
+				border: 2px solid black;
+				height: 800px;
+			}
+			
+			.left{
+				width: 200px;
+				height: 400px;
+				background-color: red;
+				float: left;
+				margin-left: -100%;
+			}
+			
+			.content{
+				height: 500px;
+				background-color: blue;
+				text-align: left;
+				line-height: 30px;
+				float: left;
+				width: 800px;
+				padding: 0 200px;
+			}
+			
+			.right{
+				background-color: orange;
+				width: 200px;
+				height: 400px;
+				float: left;
+				margin-left: -200px;
+			}
+			
+			.footer{
+				width: 800px;
+				height: 100px;
+				margin: 50px auto;
+				background-color: black;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="content">
+			    我是中间的部分<br /><br /><br />
+			  我是中间的部分<br /><br /><br />
+			  我是中间的部分<br /><br /><br />
+			  我是中间的部分<br /><br /><br />
+			  我是中间的部分<br /><br /><br />
+			</div>  
+			<div class="left">我是左边</div>
+			<div class="right">我是右边</div>
+			<div class="footer">我是页脚</div>
+		</div>
+	</body>
+</html>
+<!--
+	作者：offline
+	时间：2019-09-08
+	描述：
+	
+	圣杯布局：
+	     三个元素全部浮动，主要内容先写，给left加上margin-left：-100%移动到对应位置，right向左移动自身宽度
+	  处理内容区域遮挡问题：通过padding，切记内容区域不要加宽度
+	
+	
+	
+-->

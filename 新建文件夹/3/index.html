@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script type="text/javascript">
+			
+			window.onload  = function(){
+//				获取imglist
+				var imgList = document.getElementById("imgList");
+				
+//				获取页面中所有的img标签
+                var imgArr = document.getElementsByTagName("img");
+                
+//              设置imgList的宽度/动态设置偏移宽度
+                imgList.style.width = 620*imgArr.length+"px"
+                
+                var navDiv = document.getElementById("navDiv");
+                
+                var outer = document.getElementById("outer");
+
+                
+//              默认显示图片的索引
+                var index = 0;
+                
+//              获取所有的a
+                var allA = document.getElementsByTagName("a");
+                
+//              设置默认选中的效果
+                allA[index].style.backgroundColor = "yellow";
+                
+//              点击超链接切换到指定图片
+//              为所有的超链接点击绑定单击函数
+                 for(var i=0;i<allA.length;i++){
+//              	为每一个超链接都添加一个mun属性
+                 	allA[i].num = i;
+                 	allA[i].onclick =function(){
+//              		获取点击超链接的索引,并将设置为index   
+                 		index = this.num;
+//              		切换图片，第一张索引为0 0，第二张1 -620px,
+                 		imgList.style.left = -620*index+"px";
+                 		
+                        setA();
+                        
+                 	};
+                 }
+                 
+//               创建一个方法用来设置a
+                function setA(){
+                    for(var i=0;i<allA.length;i++){
+                 	allA[i].style.background=""
+                 }
+//                将选中的a设置黄色
+                  allA[index].style.background = "yellow"
+			};
+                }
+
+		</script>
+	</head>
+	<body>
+		<!--创建一个外部的div，来作为大容器-->
+		<div id="outer">
+			<!--创建一个ul，用来放置图片-->
+			<ul id="imgList">
+				<li><img src="images/i1.jpg"/></li>
+				<li><img src="images/i2.jpg"/></li>
+				<li><img src="images/i3.jpg"/></li>
+				<li><img src="images/i4.jpg"/></li>
+				<li><img src="images/i5.jpg"/></li>
+			</ul>
+			<!--创建导航按钮-->
+			<div id="navDiv">
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+		</div>
+	</body>
+</html>

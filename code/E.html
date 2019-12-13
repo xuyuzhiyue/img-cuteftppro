@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				color: #fff;
+				/*line-height: 200px;*/
+				font-size: 30px;
+			}
+			.box{
+				width: 1200px;
+				margin: 0 auto;
+				border: 2px solid black ;
+				height: 800px;
+				
+			}
+			.left{
+				height: 400px;
+				width: 200px;
+				background-color: red;
+				float: left;
+			}
+			.conten{
+                 height:500px ;
+                 background-color: blue;	
+                 text-align: left;
+                 line-height: 40px;
+                		
+                 /*padding: 0 200px;	        /*解决内容被左右浮动覆盖的问题*/
+                 /*margin: 0 200px;*/
+                 /*width: 100%;*/          /*给了宽度padding就会撑起盒子*/
+                overflow: hidden;
+			}
+			.right{
+			    background-color: orange;
+				width: 200px;
+				height: 400px;
+				float: right;
+			}
+			
+			.footer{
+				
+				width: 800px;
+				height: 100px;
+				background-color: darkcyan;
+				margin: 50px auto;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="box">
+			<div class="left">我是左边</div>
+			<div class="right">我是右边</div>
+			<div class="conten">
+				我是中间<br /><br /><br />
+				我是中间<br /><br /><br />
+				我是中间<br /><br /><br />
+				我是中间<br /><br /><br />
+				我是中间<br /><br /><br />
+				我是中间<br /><br /><br />
+			</div>
+			
+			<div class="footer">我是页脚</div>
+		</div>
+		
+	</body>
+</html>
+<!--
+	作者：offline
+	时间：2019-09-08
+	描述：
+	
+	浮动解决：
+	       先将浮动元素先写，然后再写不浮动的内容区域，内容区域会自动上去，因为浮动元素不占据位置；
+	   遮挡问题：
+	        padding：0   200px
+	        marring:0    200px
+	        overflow:hidden;
+	        切记不要给内容区域加上宽度
+	        

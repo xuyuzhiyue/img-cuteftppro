@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		div{
+			width: 300px;
+			height: 300px;
+			border: 10px dashed rosybrown;
+			
+			
+			
+		}
+		
+		.box{
+			
+			background-color: goldenrod;
+		}
+		 
+		 .box2{
+		 	
+		 	background-image: url(img/1.JPG);
+		 	/*background-repeat: no-repeat;    /*没有平铺，那么线底下没有图片*/*/*/
+		 	  /*background-repeat: repeat-x;    横向平铺*/                              
+		 	  /*background-repeat: repeat-y;*/
+		 }
+		
+		.box3{
+			
+			background-image: url(img/img/img2/timgNDIWIMOR.jpg);
+			background-repeat: no-repeat;
+			/*background-size: 100%;*/
+			/*background-size: 100% 100%;*/
+			/*background-size: 200px 200px;*/
+			
+			/*background-size: cover;*/
+			background-size: contain;
+			
+		}
+		.box4{
+			
+			background-image: url(19.jpg);
+			background-size: 200px 200px;
+			background-repeat: no-repeat;
+			
+			/*background-position: 100px 100px;*/
+			/*background-position: left bottom;*/ 
+			background-position: center center;
+			
+		}
+		
+		.box5{
+                background: red url(img/img/timgNDIWIMOR.jpg) center center no-repeat;	
+			    background-size: 100px 100px;
+		}
+		
+		
+	</style>
+	<body>
+		<div class="box "></div>
+		<br />
+		
+		<div class="box2"></div>
+		
+		<br />	
+		
+	   <div class ="box3"></div>
+	   	
+	   	<br />
+	   	
+	   	<div class="box4"></div>
+	   	
+	   	<br />
+	   	
+	   	<div class="box5"></div>
+	  
+	</body>
+</html>
+
+<!--
+	作者：offline
+	时间：2019-09-07
+	描述：
+	backgroud-color    设置背景颜色
+	background-image   指定图片地址    url(图片地址)
+	background-repeat  背景平铺方式    no-repeat  repeat-x  repeat-y  repeat
+	background-size    背景图片大小   宽  高      xpx   %     cover(覆盖)  contain(包含)
+	background-position  背景图位置  x  y   默认：0，0  left,top   xpx  left/rigth/center   top/center/bottom
+	{background:颜色 图片 位置x 位置Y 平铺
+	 background-size: 100px 100px;
+    }
+	
+	
+-->
